@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 50% 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header header"
+    ". . text . ."
+    ". pic pic pic .";
+}
+header {        
+    grid-area: header;   
+}
+
+header nav {
+    width: 100%;
+    background-color: rgb(0, 248, 165);
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.text {
+    grid-area: text;
+    background-color: bisque;    
+}
+
+.pic {
+    grid-area: pic;
+    background-color: burlywood;
+}
