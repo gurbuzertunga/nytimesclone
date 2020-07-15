@@ -6,15 +6,24 @@
     box-sizing: border-box;
 }
 
+
+@font-face {
+    font-family: 'chomskyregular';
+    src: url('assets/chomsky-8moa2-webfont.woff') format('woff2'),
+         url('assets/chomsky-8moa2-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 50% 1fr 1fr;
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 1px;
-    max-width: 960px;
+    max-width: 100vw;
     margin: 0 auto;
     grid-template-areas:
-        "nav nav nav nav nav "
+        "nav nav nav nav nav"
         "header header header header r-aside"
         "l-aside main main main r-aside"
         "l-aside main main main r-aside"
@@ -23,7 +32,7 @@
         "footer footer footer footer r-aside";
         
 }
-#wrapper > *{
+header, main, aside, section, footer {
     background: red;
     padding: 30px;
 }
@@ -44,7 +53,28 @@ main{
 }
 
 nav{
+    border-bottom: solid gray ;
+    border-width: 1px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
     grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.nav-button {
+    padding: 10px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    color: cornsilk;
+}
+
+#nytimes-logo {
+    font-family: 'chomskyregular', Arial, sans-serif; 
+    font-size: 35px;
+    font-weight: 400;
 }
 
 section{
