@@ -1,6 +1,6 @@
 
 * {
-    text-align: center;
+    text-align: start;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,7 +24,7 @@
     margin: 0 auto;
     grid-template-areas:
         "nav nav nav nav nav"
-        "header header header header r-aside"
+        /* "header header header header r-aside" */
         "l-aside main main main r-aside"
         "l-aside main main main r-aside"
         "l-aside main main main r-aside"
@@ -33,13 +33,13 @@
         
 }
 header, main, aside, section, footer {
-    background: red;
+    background: rgb(130, 130, 219);
     padding: 30px;
 }
 
-header{
+/* header{
     grid-area: header;
-}
+} */
 
 main{
     grid-area: main;
@@ -87,4 +87,42 @@ footer{
 
 .right-aside {
     grid-area: r-aside;
+}
+
+.title-header {
+    font-style: italic;
+    max-width: 25%;
+    margin: 0 auto;
+}
+
+.main-img {
+    max-height: 30%;
+    max-width: 100%;
+}
+
+.top-article {
+    max-width: 50%;
+    margin: 20px auto;
+}
+article p {
+    margin: 20px 0;
+}
+
+.diagrams {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.diagrams-container {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: column;
+    gap: 2px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.diagrams-container p img {
+    width: 90%;
 }
