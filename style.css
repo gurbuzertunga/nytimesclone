@@ -26,7 +26,7 @@
     "l-aside main main main r-aside"
     "l-aside main main main r-aside"
     "l-aside footer-images footer-images footer-images r-aside"
-    "footer footer footer footer footer";
+    ". footer footer footer .";
 }
 
 .footer-images {
@@ -175,4 +175,31 @@ article p {
         width: 100%;
         margin-top: 10px;
       }
+}
+
+.footer-heading {
+    font-family: "chomskyregular", Arial, sans-serif;
+   
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-grid > a{
+    flex-direction: column;
+    display: flex;
+    margin: 5px 0;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer h6 {
+  color: rgb(154, 154, 154);
 }
