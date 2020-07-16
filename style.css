@@ -52,6 +52,7 @@ main {
 }
 
 nav {
+  background-color: white;  
   border-bottom: solid gray;
   border-width: 1px;
   padding: 10px;
@@ -126,6 +127,24 @@ article p {
   width: 90%;
 }
 
+.footer-wrapper1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 3fr 1fr);
+  grid-auto-flow: column;
+  gap: 2px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.bottom1 {
+    padding-bottom: 10px;
+    border-bottom: solid black;
+    border-width: 1px;
+ }
+
+
+
 @media (max-width: 768px) {
     .diagrams-container {
         display: grid;
@@ -136,4 +155,24 @@ article p {
         width: 100%;
         margin-top: 10px;
     }
+
+    .footer-wrapper1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 3fr 1fr);
+        grid-auto-flow: column;
+        gap: 2px;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .footer-wrapper2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 3fr 1fr);
+        grid-auto-flow: column;
+        gap: 2px;
+        width: 100%;
+        margin-top: 10px;
+      }
 }
