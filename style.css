@@ -28,10 +28,17 @@
         "l-aside main main main r-aside"
         "l-aside main main main r-aside"
         "l-aside main main main r-aside"
-        "section section section section r-aside"
-        "footer footer footer footer r-aside";
+        "l-aside footer-images footer-images footer-images r-aside"
+        /* "section section section section r-aside" */
+        "footer footer footer footer footer";
         
 }
+
+.footer-images {
+    grid-area: footer-images;
+    
+}
+
 header, main, aside, section, footer {
     padding: 30px;
 }
@@ -99,7 +106,7 @@ footer{
     max-width: 100%;
 }
 
-.top-article {
+article {
     max-width: 50%;
     margin: 20px auto;
 }
@@ -124,4 +131,16 @@ article p {
 
 .diagrams-container p img {
     width: 90%;
+}
+
+.footer-images {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-auto-flow: column;
+    gap: 2px;
+    max-width: 80%;
+    margin-top: 10px;
+    border: solid 2px black;
+    margin: 0 auto;
 }
