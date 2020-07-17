@@ -16,8 +16,12 @@
       <nav id="navbar">
         <div class="navbar-left">
           <i class="fas fa-bars"></i>
-          <i class="fas fa-search"></i>
-        </div>
+          <button type="submit" class="onclick"><i class="fas fa-search"></i></button>        
+          <div class="nav-search">
+          <input type="text">
+          <button type="submit"><i class="fas fa-search"></i></button>        
+          </div>
+      </div>
         <h1 id="nytimes-logo">The New York Times</h1>
         <div class="navbar-right">
           <button type="submit" class="nav-button">
@@ -30,9 +34,9 @@
         aside
       </aside>
       <main>
-        <h1 class="title-header">
+        <h2 class="title-header">
           Space Ripples Reveal Big Bang’s Smoking Gun
-        </h1>
+        </h2>
         <img
           class="main-img"
           src="img/main-pic.jpg"
@@ -52,16 +56,18 @@
               Dennis Overbye
             </a>
           </h5>
-          <div>
+          <div class="social">
             <span>
               March 17, 2014
             </span>
+            <span class="social-icons">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-twitter"></i>
             <i class="fas fa-envelope"></i>
             <i class="fas fa-share"></i>
             <i class="far fa-bookmark"></i>
             <i class="far fa-comment-alt"></i>
+            </span>
           </div>
 
           <p>
@@ -243,8 +249,6 @@
             </p>
           </div>
         </section>
-
-        <section>
           <article>
             <p>
               Dr. Kovac said the chance that the results were a fluke was only
@@ -492,20 +496,18 @@
               Ripples Reveal Big Bang’s Smoking Gun. Order Reprints | Today’s
               Paper | Subscribe
             </h6>
-            <span>
-              <div>
+            <div class="social">
+               <div class="comment">
                 <button type="submit">READ 615 COMMENTS</button>
               </div>
-              <div>
+              <div class="social-icons" >
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-twitter"></i>
                 <i class="fas fa-envelope"></i>
                 <i class="fas fa-share"></i>
               </div>
-            </span>
-          </article>
-        </section>
-
+            </div>
+          </article>        
         <section class="bottom-section">
           <h3><a href="">More in Space and Astronomy</a></h3>
           <div class="left-b-section">
@@ -542,9 +544,7 @@
           </div>
 
           <div class="right-b-section">
-            <h3
-              style="float: inline-start margin-left: -15px; margin-top: -30px;"
-            >
+            <h3 class="footer-recommended-header">
               <a href="">Most Popular</a>
             </h3>
             <ul>

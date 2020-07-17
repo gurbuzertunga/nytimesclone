@@ -38,6 +38,7 @@ aside,
 section,
 footer {
   padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 main {
@@ -49,6 +50,26 @@ main {
   /* position: relative;
     z-index: 1;
     top: -100px; */
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.comment > * {
+  width:  250px;
+  height: auto;
+  background-color: cadetblue;
+  color: white;
+  border: transparent;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.social-icons > * {
+  margin-left: 5px;
 }
 
 nav {
@@ -71,6 +92,14 @@ nav {
   background-color: cadetblue;
   border-radius: 10px;
   color: cornsilk;
+  font-family: 'Times New Roman', Times, serif;
+}
+.onclick:focus + .nav-search {
+    display: inline;
+}
+
+.nav-search {
+  display: none;
 }
 
 #nytimes-logo {
@@ -178,12 +207,15 @@ article p {
 
 .right-b-section {
   width: 30%;
-  padding: -30px 0;
 }
 
 .right-b-section,
 .left-b-section {
   padding: 0 10px;
+}
+
+.footer-recommended-header {
+  margin-top: -30px
 }
 
 .right-b-section ul {
@@ -276,9 +308,9 @@ iframe {
   font-size: 100%;
 }
 
-@media(max-width: 1145px) {
+@media(max-width: 1400px) {
   .r-flex-box > * {
-    font-size: 7px;
+    font-size: 9px;
   }
   .r-flex-box > img {
     max-width: 90px;
@@ -291,5 +323,5 @@ iframe {
 }
 
 .right-aside span {
-  width: 30%;
+  width: 50%;
 }
