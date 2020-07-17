@@ -280,4 +280,13 @@ iframe {
   .r-flex-box > * {
     font-size: 7px;
   }
+  .r-flex-box > img {
+    max-width: 90px;
+    max-height: 60px;
+    margin-right: 10px;
+  }
+}
+
+.right-aside span {
+  width: 30%;
 }
