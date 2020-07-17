@@ -22,10 +22,10 @@
   margin: 0 auto;
   grid-template-areas:
     "nav nav nav nav nav"
+    "l-aside main main main ."
     "l-aside main main main r-aside"
-    "l-aside main main main r-aside"
-    "l-aside main main main r-aside"
-    "l-aside footer-images footer-images footer-images r-aside"
+    "l-aside main main main ."
+    "l-aside footer-images footer-images footer-images ."
     ". footer footer footer .";
 }
 
@@ -52,7 +52,7 @@ main {
 }
 
 nav {
-  background-color: white;  
+  background-color: white;
   border-bottom: solid gray;
   border-width: 1px;
   padding: 10px;
@@ -60,12 +60,14 @@ nav {
   height: auto;
   grid-area: nav;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: fixed;
 }
 
 .nav-button {
-  padding: 10px;
+  padding: 3px;
+  max-width: 130px;
+  font-size: 70%;
   background-color: cadetblue;
   border-radius: 10px;
   color: cornsilk;
@@ -73,7 +75,7 @@ nav {
 
 #nytimes-logo {
   font-family: "chomskyregular", Arial, sans-serif;
-  font-size: 35px;
+  font-size: 100%;
   font-weight: 400;
 }
 
@@ -87,6 +89,8 @@ footer {
 
 .right-aside {
   grid-area: r-aside;
+  font-size: 90%;
+  max-width: 100%;
 }
 
 .title-header {
@@ -95,7 +99,8 @@ footer {
   margin: 0 auto;
 }
 
-.main-img, .middle-img {
+.main-img,
+.middle-img {
   max-width: 100%;
   max-height: 30%;
 }
@@ -128,11 +133,11 @@ article p {
 }
 
 .bottom-section {
-   width: 100%;
-   margin: auto; 
-   border-bottom: 1px solid black;
-   font-size: 100%;
-   background-color: burlywood;
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid black;
+  font-size: 100%;
+  background-color: burlywood;
 }
 
 .left-b-section {
@@ -140,9 +145,8 @@ article p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 15px 0;
   margin-bottom: 20px;
-  font-size: 90%;
+  font-size: 80%;
   border-top: solid 1px black;
 }
 
@@ -152,7 +156,7 @@ article p {
   justify-content: space-between;
   width: 70%;
   padding-top: 30px;
-  font-size: 90%;
+  font-size: 70%;
   border-top: solid 1px black;
   margin-top: 20px;
 }
@@ -162,18 +166,22 @@ article p {
 }
 
 .left-b-section-1 > div {
-  width: 25%;
+  width: 30%;
 }
 
 .left-b-section > div {
-  width: 25%;
-  margin: 0 10px 10px;
+  width: 30%;
+  /* margin: 0 10px 10px; */
 }
 
-
 .right-b-section {
-  width: 25%;
+  width: 30%;
   padding: -30px 0;
+}
+
+.right-b-section,
+.left-b-section {
+  padding: 0 10px;
 }
 
 .right-b-section ul {
@@ -194,42 +202,42 @@ article p {
   float: right;
 }
 
-
 .left-b-section img {
   object-fit: contain;
 }
 
+.bottom-section a {
+  text-decoration: none;
+}
 
 @media (max-width: 768px) {
-    .diagrams-container {
-        display: grid;
-        grid-template-columns: repeat(2, 4fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-auto-flow: column;
-        gap: 2px;
-        width: 100%;
-        margin-top: 10px;
-    }
-
+  .diagrams-container {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-auto-flow: column;
+    gap: 2px;
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 .footer-heading {
-    font-family: "chomskyregular", Arial, sans-serif;
-   
+  font-family: "chomskyregular", Arial, sans-serif;
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.footer-grid > a{
-    flex-direction: column;
-    display: flex;
-    margin: 5px 0;
-    text-decoration: none;
-    color: black;
+.footer-grid > a {
+  flex-direction: column;
+  display: flex;
+  margin: 5px 0;
+  text-decoration: none;
+  color: black;
 }
 
 a:hover {
@@ -240,3 +248,28 @@ footer h6 {
   color: rgb(154, 154, 154);
 }
 
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.container {
+  display: flex;
+}
+
+.r-flex-box {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  margin: 20px 0;
+  font-size: 70%;
+}
+
+.r-flex-box > img {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.article-sign-in > * {
+  text-align: center;
+}
