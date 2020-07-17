@@ -117,7 +117,7 @@ article p {
 
 .diagrams {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 ;
 }
 
 .diagrams-container {
@@ -212,7 +212,7 @@ article p {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .diagrams-container {
     display: grid;
     grid-template-columns: repeat(2, 4fr);
@@ -276,7 +276,7 @@ iframe {
   font-size: 100%;
 }
 
-@media(max-width: 1115px) {
+@media(max-width: 1145px) {
   .r-flex-box > * {
     font-size: 7px;
   }
@@ -284,6 +284,9 @@ iframe {
     max-width: 90px;
     max-height: 60px;
     margin-right: 10px;
+  }
+  .right-b-section li {
+    font-size: 65%;
   }
 }
 
