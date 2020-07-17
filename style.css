@@ -22,7 +22,7 @@
   max-width: 100vw;
   margin: 0 auto;
   grid-template-areas:
-    "nav nav nav nav nav nav nav"
+    "l-aside nav nav nav nav nav nav"
     "l-aside . main main main . ."
     "l-aside . main main main r-aside r-aside"
     ". . main main main . ."
@@ -46,8 +46,13 @@ main {
   grid-area: main;
 }
 
-.left-aside {
+.l-aside {
   grid-area: l-aside;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .social {
@@ -373,4 +378,26 @@ i {
 
 .space-text {
   margin-top: -15px;
+}
+
+.side-bar, .side-bar-1 {
+  list-style: none;
+}
+
+.l-aside li {
+  font-size: 10px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.side-bar li:hover {
+  background-color: lightcyan;
+}
+.side-bar-1 li:hover {
+  background-color: lightcyan;
+}
+
+.l-aside-bar {
+  border: solid 1px rgb(171, 171, 171);
 }
