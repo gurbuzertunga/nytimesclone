@@ -15,18 +15,18 @@
 
 #wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 50% repeat(4, 1fr);
-  grid-auto-rows: minmax(200px, auto);
+  grid-template-columns: 1fr 1fr 1fr 40% 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
   grid-gap: 1px;
   max-width: 100vw;
   margin: 0 auto;
   grid-template-areas:
     "nav nav nav nav nav nav nav"
-    "l-aside main main main . . ."
-    "l-aside main main main r-aside r-aside r-aside"
-    "l-aside main main main . . ."
-    "l-aside footer-images footer-images footer-images . . ."
-    ". . footer footer footer footer .";
+    "l-aside . main main main . ."
+    "l-aside . main main main r-aside r-aside"
+    "l-aside . main main main . ."
+    "l-aside . footer-images footer-images footer-images . ."
+    ". . footer footer footer . .";
 }
 
 .footer-images {
@@ -37,7 +37,7 @@ main,
 aside,
 section,
 footer {
-  padding: 30px;
+  padding: 10px;
 }
 
 main {
@@ -92,6 +92,7 @@ footer {
   font-size: 100%;
   max-width: 100%;
   border-top: solid 1px gray;
+  float: left;
 }
 
 .title-header {
@@ -107,7 +108,7 @@ footer {
 }
 
 article {
-  max-width: 50%;
+  max-width: 600px;
   margin: 20px auto;
 }
 article p {
@@ -258,15 +259,25 @@ iframe {
   display: flex;
   width: 100%;
   height: 80px;
-  margin: 20px 0;
+  margin: 30px 0;
   font-size: 70%;
 }
 
 .r-flex-box > img {
-  width: 50%;
+  max-width: 130px;
   margin-right: 10px;
 }
 
 .article-sign-in > * {
   text-align: center;
+}
+
+.r-flex-box > * {
+  font-size: 100%;
+}
+
+@media(max-width: 1115px) {
+  .r-flex-box > * {
+    font-size: 7px;
+  }
 }
