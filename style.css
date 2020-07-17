@@ -127,7 +127,69 @@ article p {
   width: 90%;
 }
 
-.footer-wrapper1 {
+.bottom-section {
+   width: 55%;
+   margin: 0 auto; 
+   border-bottom: 1px solid black;
+}
+
+.left-b-section {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-top: solid 1px black;
+}
+
+.left-b-section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  padding-top: 30px;
+  border-top: solid 1px black;
+  margin-top: 20px;
+}
+
+.bottom-section img {
+  width: 100%;
+}
+
+.left-b-section-1 > div {
+  width: 25%;
+}
+
+.left-b-section > div {
+  width: 25%;
+  margin: 0 10px 10px;
+}
+
+.right-b-section {
+  width: 25%;
+}
+
+.right-b-section p {
+  margin: 5px 0;
+}
+
+.bottom-section .left-b-section {
+  float: left;
+}
+
+.bottom-section .right-b-section {
+  float: right;
+}
+
+
+.left-b-section img {
+  object-fit: contain;
+}
+
+
+
+/* .footer-wrapper1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 3fr 1fr);
@@ -135,13 +197,8 @@ article p {
   gap: 2px;
   width: 100%;
   margin-top: 10px;
-}
+} */
 
-.bottom1 {
-    padding-bottom: 10px;
-    border-bottom: solid black;
-    border-width: 1px;
- }
 
 
 
@@ -156,7 +213,7 @@ article p {
         margin-top: 10px;
     }
 
-    .footer-wrapper1 {
+    /* .footer-wrapper1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 3fr 1fr);
@@ -164,7 +221,7 @@ article p {
         gap: 2px;
         width: 100%;
         margin-top: 10px;
-      }
+      } */
 
       .footer-wrapper2 {
         display: grid;
@@ -203,3 +260,4 @@ a:hover {
 footer h6 {
   color: rgb(154, 154, 154);
 }
+
