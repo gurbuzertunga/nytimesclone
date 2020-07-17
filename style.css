@@ -15,18 +15,18 @@
 
 #wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 50% 1fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 1fr 1fr 50% repeat(4, 1fr);
+  grid-auto-rows: minmax(200px, auto);
   grid-gap: 1px;
   max-width: 100vw;
   margin: 0 auto;
   grid-template-areas:
-    "nav nav nav nav nav"
-    "l-aside main main main ."
-    "l-aside main main main r-aside"
-    "l-aside main main main ."
-    "l-aside footer-images footer-images footer-images ."
-    ". footer footer footer .";
+    "nav nav nav nav nav nav nav"
+    "l-aside main main main . . ."
+    "l-aside main main main r-aside r-aside r-aside"
+    "l-aside main main main . . ."
+    "l-aside footer-images footer-images footer-images . . ."
+    ". . footer footer footer footer .";
 }
 
 .footer-images {
@@ -87,10 +87,11 @@ footer {
   grid-area: footer;
 }
 
-.right-aside {
+.right-aside { 
   grid-area: r-aside;
-  font-size: 90%;
+  font-size: 100%;
   max-width: 100%;
+  border-top: solid 1px gray;
 }
 
 .title-header {
@@ -137,7 +138,6 @@ article p {
   margin: auto;
   border-bottom: 1px solid black;
   font-size: 100%;
-  background-color: burlywood;
 }
 
 .left-b-section {
@@ -148,6 +148,7 @@ article p {
   margin-bottom: 20px;
   font-size: 80%;
   border-top: solid 1px black;
+ 
 }
 
 .left-b-section-1 {
@@ -251,10 +252,6 @@ footer h6 {
 iframe {
   width: 100%;
   height: 400px;
-}
-
-.container {
-  display: flex;
 }
 
 .r-flex-box {
