@@ -23,8 +23,8 @@
   margin: 0 auto;
   grid-template-areas:
     "nav nav nav nav nav nav nav"
-    ". . main main main . ."
-    ". . main main main r-aside r-aside"
+    "l-aside . main main main . ."
+    "l-aside . main main main r-aside r-aside"
     ". . main main main . ."
     ". . footer-images footer-images footer-images . ."
     ". . footer footer footer . .";
@@ -366,7 +366,7 @@ i {
 }
 
 @media (max-width: 1633px) {
-  .footer-line  {
+  .footer-line {
     font-size: 50%;
   }
 }
