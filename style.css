@@ -380,7 +380,8 @@ i {
   margin-top: -15px;
 }
 
-.side-bar, .side-bar-1 {
+.side-bar,
+.side-bar-1 {
   list-style: none;
 }
 
@@ -394,6 +395,7 @@ i {
 .side-bar li:hover {
   background-color: lightcyan;
 }
+
 .side-bar-1 li:hover {
   background-color: lightcyan;
 }
