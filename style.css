@@ -7,7 +7,8 @@
 
 @font-face {
   font-family: "chomskyregular";
-  src: url("assets/chomsky-8moa2-webfont.woff") format("woff2"),
+  src:
+    url("assets/chomsky-8moa2-webfont.woff") format("woff2"),
     url("assets/chomsky-8moa2-webfont.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
