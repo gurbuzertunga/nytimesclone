@@ -7,8 +7,7 @@
 
 @font-face {
   font-family: "chomskyregular";
-  src:
-    url("assets/chomsky-8moa2-webfont.woff") format("woff2"),
+  src: url("assets/chomsky-8moa2-webfont.woff") format("woff2"),
     url("assets/chomsky-8moa2-webfont.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -81,7 +80,7 @@ nav {
   padding: 3px;
   max-width: 130px;
   font-size: 70%;
-  background-color:#567B95;
+  background-color: #567b95;
   border-radius: 2px;
   color: cornsilk;
   font-family: "Times New Roman", Times, serif;
@@ -184,8 +183,7 @@ article p {
   grid-auto-flow: column;
   gap: 2px;
   width: 100%;
-  margin-top: 10px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .bottom-section img {
@@ -231,6 +229,7 @@ article p {
   margin-bottom: 20px;
   font-size: 80%;
   border-top: solid 1px black;
+  float: left;
 }
 
 .left-b-section-1 {
@@ -253,6 +252,7 @@ article p {
 
 .right-b-section {
   width: 30%;
+  float: right;
 }
 
 .right-b-section,
@@ -273,14 +273,6 @@ article p {
   padding: 3% 0;
   font-size: 80%;
   border-top: solid 1px rgb(82, 82, 82);
-}
-
-.left-b-section {
-  float: left;
-}
-
-.right-b-section {
-  float: right;
 }
 
 a {
@@ -406,26 +398,4 @@ i {
 
 .space-text {
   margin-top: -15px;
-}
-
-.side-bar, .side-bar-1 {
-  list-style: none;
-}
-
-.l-aside li {
-  font-size: 10px;
-  width: 100%;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.side-bar li:hover {
-  background-color: lightcyan;
-}
-.side-bar-1 li:hover {
-  background-color: lightcyan;
-}
-
-.l-aside-bar {
-  border: solid 1px rgb(171, 171, 171);
 }
