@@ -16,7 +16,7 @@
 
 #wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 40% 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 30% 1fr 1fr 1fr;
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 1px;
   max-width: 100vw;
@@ -25,6 +25,10 @@
     "nav nav nav nav nav nav nav"
     "l-aside . main main main . ."
     "l-aside . main main main r-aside r-aside"
+    "l-aside . main main main . ."
+    "l-aside . main main main . ."
+    "l-aside . main main main . ."
+    "l-aside . main main main . ."
     ". . main main main . ."
     ". b-sec b-sec b-sec b-sec b-sec ."
     "footer footer footer footer footer footer footer";
@@ -147,8 +151,9 @@ footer {
 .right-aside {
   grid-area: r-aside;
   font-size: 100%;
-  max-width: 100%;
+  max-width: 70%;
   float: left;
+
 }
 
 .title-header {
@@ -206,7 +211,7 @@ article p {
 }
 
 .diagrams-container img {
-  width: 80%;
+  width: 100%;
 }
 
 .diagrams-container p {
@@ -243,11 +248,8 @@ article p {
   margin-top: 20px;
 }
 
+.left-b-section > div,
 .left-b-section-1 > div {
-  width: 30%;
-}
-
-.left-b-section > div {
   width: 30%;
 }
 
