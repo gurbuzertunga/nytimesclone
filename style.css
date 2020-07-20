@@ -112,6 +112,34 @@ section {
   grid-area: section;
 }
 
+.footer-sticky {
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  padding: 20px 10px;
+  border-top: solid 1px black;
+  position: fixed;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.sticky-item {
+  flex-grow: 4;
+}
+
+.sticky-item1 {
+  flex-grow: 2;
+}
+
+.sticky-item2 {
+  flex-grow: 1;
+  font-weight: bolder;
+}
+
+.sticky-item3 {
+  flex-grow: 1;
+}
+
 footer {
   grid-area: footer;
 }
@@ -363,6 +391,7 @@ i {
   padding-top: 4px;
   border-top: 1px solid gray;
   font-size: 12px;
+  margin-bottom: 50px;
 }
 
 .footer-line a {
