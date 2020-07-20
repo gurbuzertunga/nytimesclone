@@ -24,10 +24,10 @@
   grid-template-areas:
     "nav nav nav nav nav nav nav"
     "l-aside . main main main . ."
-    "l-aside . main main main . ."
-    ". . main main main r-aside r-aside"
+    "l-aside . main main main r-aside r-aside"
+    ". . main main main . ."
     ". b-sec b-sec b-sec b-sec b-sec ."
-    ". . footer footer footer . .";
+    "footer footer footer footer footer footer footer";
 }
 
 main,
@@ -42,17 +42,7 @@ main {
   grid-area: main;
 }
 
-.l-aside {
-  grid-area: l-aside;
-  z-index: 1;
-  position: relative;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-}
-
 .social {
-  display: flex;
   justify-content: space-between;
   padding-top: 10px;
 }
@@ -79,9 +69,12 @@ nav {
   width: 100%;
   height: auto;
   grid-area: nav;
-  display: flex;
   justify-content: space-between;
   position: fixed;
+}
+
+.flex {
+  display: flex;
 }
 
 .nav-button {
@@ -154,7 +147,6 @@ article p {
 
 .diagrams {
   max-width: 100%;
-  margin: 0;
 }
 
 .diagrams-container {
@@ -165,10 +157,16 @@ article p {
   gap: 2px;
   width: 100%;
   margin-top: 10px;
+  margin: 0 auto;
 }
 
 .bottom-section img {
-  width: 100%;
+  width: 90%;
+}
+
+.bottom-section h4 {
+  width: 90%;
+  font-size: 90%;
 }
 
 .left-b-section img {
@@ -180,8 +178,13 @@ article p {
   margin-right: 10px;
 }
 
-.diagrams-container p img {
-  width: 90%;
+.diagrams-container img {
+  width: 80%;
+}
+
+.diagrams-container p {
+  width: 80%;
+  font-size: 70%;
 }
 
 .bottom-section {
@@ -195,7 +198,6 @@ article p {
 
 .left-b-section {
   width: 70%;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -204,7 +206,6 @@ article p {
 }
 
 .left-b-section-1 {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 70%;
@@ -246,11 +247,11 @@ article p {
   border-top: solid 1px rgb(82, 82, 82);
 }
 
-.bottom-section .left-b-section {
+.left-b-section {
   float: left;
 }
 
-.bottom-section .right-b-section {
+.right-b-section {
   float: right;
 }
 
@@ -263,7 +264,7 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 768px) {
   .diagrams-container {
     display: grid;
     grid-template-columns: repeat(2, 4fr);
@@ -273,7 +274,9 @@ a {
     width: 100%;
     margin-top: 10px;
   }
+}
 
+@media (max-width: 1300px) {
   .right-b-section {
     font-size: 12px;
   }
@@ -284,7 +287,6 @@ a {
 }
 
 .footer-content {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 15px;
@@ -308,11 +310,10 @@ footer h6 {
 
 iframe {
   width: 100%;
-  height: 400px;
+  height: 350px;
 }
 
 .r-flex-box {
-  display: flex;
   width: 100%;
   height: 80px;
   margin: 15px 0;
@@ -358,7 +359,6 @@ i {
 }
 
 .footer-line {
-  display: flex;
   justify-content: space-evenly;
   padding-top: 4px;
   border-top: 1px solid gray;
