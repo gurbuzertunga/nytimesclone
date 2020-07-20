@@ -1,4 +1,4 @@
-# Project Name
+# Positioning and Floating Elements Project
 
 > We created a clone of a The New York Times article webpage. 
 
