@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/gurbuzertunga/nytimesclone/feature/index.html)
+[Live Demo Link](https://raw.githack.com/gurbuzertunga/nytimesclone/master/index.html)
 
 
 ## Authors
